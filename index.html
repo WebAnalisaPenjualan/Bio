@@ -21,12 +21,15 @@
     /* -------------- Umum -------------- */
     body {
       font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
     }
     
-    /* Mengatur container utama agar memiliki sedikit jarak dari sidebar */
+    /* Mengatur container utama dengan margin kiri untuk tampilan desktop */
     .main-content {
-      margin-left: 250px; /* menyesuaikan dengan lebar sidebar */
+      margin-left: 250px;
       padding: 2rem;
+      transition: margin 0.3s ease;
     }
 
     /* -------------- Sidebar -------------- */
@@ -39,6 +42,7 @@
       background: #343a40; /* abu-abu tua khas bootstrap */
       color: #fff;
       overflow-y: auto;
+      transition: all 0.3s ease;
     }
     .sidebar .profile-pic {
       width: 150px;
@@ -66,6 +70,7 @@
     .sidebar ul {
       list-style: none;
       padding: 0;
+      margin: 0;
     }
     .sidebar ul li {
       width: 100%;
@@ -81,6 +86,10 @@
     }
     .sidebar ul li a:hover {
       background: #495057;
+    }
+    /* Sosial media pada bagian bawah sidebar */
+    .sidebar ul.mt-auto {
+      margin-top: auto;
     }
 
     /* -------------- Bagian Section -------------- */
@@ -106,6 +115,7 @@
     .about .description {
       margin-top: 20px;
       color: #666;
+      white-space: pre-line;
     }
 
     /* -------------- Bagian "Services" -------------- */
@@ -150,12 +160,46 @@
       border-top: 1px solid #e9ecef;
       margin-top: 2rem;
     }
+
+    /* -------------- Media Query untuk perangkat kecil -------------- */
+    @media (max-width: 768px) {
+      .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+      }
+      .sidebar .profile-pic {
+        margin: 10px auto;
+      }
+      /* Menampilkan menu navigasi secara horizontal */
+      .sidebar ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .sidebar ul li {
+        flex: 1 1 auto;
+        border-bottom: none;
+      }
+      .sidebar ul li a {
+        padding: 10px;
+        border-bottom: none;
+        border-right: 1px solid #454d55;
+      }
+      .sidebar ul li:last-child a {
+        border-right: none;
+      }
+      .main-content {
+        margin-left: 0;
+        padding: 1rem;
+      }
+    }
   </style>
 </head>
 <body>
 
   <!-- -------------- Sidebar -------------- -->
-  <div class="sidebar d-flex flex-column justify-content-start">
+  <div class="sidebar d-flex flex-column">
     <!-- Foto Profil -->
     <div class="profile-pic">
       <!-- Ganti dengan foto Anda sendiri -->
@@ -190,8 +234,12 @@
         <div class="row align-items-center" style="min-height: 80vh;">
           <div class="col-md-12 text-center">
             <h1>Halo, Saya <span style="color: #007bff;">Agung Samodra</span></h1>
-            <p class="lead">Seorang <b>pembuat artikel analisa</b> yang senang membantu kalian seputar analisa penjualan dan laporan keuangan dan SPI.</p>
-            <a href="#contact" class="btn btn-primary btn-lg mt-3">Hubungi Saya free Konsultasi</a>
+            <p class="lead">
+              Seorang <b>pembuat artikel analisa</b> yang senang membantu kalian seputar analisa penjualan, laporan keuangan, dan SPI.
+            </p>
+            <a href="#contact" class="btn btn-primary btn-lg mt-3">
+              Hubungi Saya untuk Free Konsultasi
+            </a>
           </div>
         </div>
       </div>
@@ -206,9 +254,9 @@
             <h2 class="title">Tentang Saya</h2>
             <h4 class="subtitle">Analisa & SPI</h4>
             <p class="description">
-                Saya adalah seorang profesional yang memiliki pengalaman di bidang akuntansi dan analisis keuangan, dengan fokus pada pengelolaan dan pengawasan sistem penjualan internal (SPI). Saya bekerja di perusahaan dengan tanggung jawab untuk memantau dan menganalisis kinerja penjualan, serta memberikan rekomendasi untuk optimasi keuangan dan efisiensi operasional. Selain itu, saya juga berpengalaman dalam merancang dan menerapkan kebijakan yang mendukung pertumbuhan bisnis dan keberlanjutan organisasi.
+Saya adalah seorang profesional dengan pengalaman di bidang akuntansi dan analisis keuangan, dengan fokus pada pengelolaan dan pengawasan sistem penjualan internal (SPI). Saya bekerja di perusahaan dengan tanggung jawab untuk memantau dan menganalisis kinerja penjualan, serta memberikan rekomendasi untuk optimasi keuangan dan efisiensi operasional.
 
-                Sebagai seorang pengamat keuangan, saya percaya bahwa pemahaman yang mendalam tentang data penjualan dapat mengungkap peluang untuk meningkatkan laba dan meminimalkan biaya operasional. Saya berkomitmen untuk terus belajar dan mengembangkan keterampilan analitis saya untuk membantu perusahaan mencapai tujuan keuangan dan strategis yang lebih baik.
+Sebagai seorang pengamat keuangan, saya percaya bahwa pemahaman mendalam tentang data penjualan dapat mengungkap peluang untuk meningkatkan laba dan meminimalkan biaya operasional. Saya berkomitmen untuk terus belajar dan mengembangkan keterampilan analitis dalam membantu perusahaan mencapai tujuan strategis dan keuangan.
             </p>
           </div>
           <div class="col-md-6">
@@ -229,17 +277,21 @@
               <div class="card-body">
                 <i class="fas fa-code"></i>
                 <h5 class="card-title mt-3">Analisa & SPI</h5>
-                <p class="card-text">Memberikan Informasi  
-                    Analisis Penjualan Keuangan SPI bertujuan untuk memahami faktor-faktor yang memengaruhi kinerja penjualan dan dampaknya terhadap keuangan perusahaan.</p>
+                <p class="card-text">
+                  Memberikan informasi dan analisis penjualan serta keuangan melalui SPI dengan tujuan memahami faktor-faktor yang memengaruhi kinerja penjualan dan dampaknya terhadap keuangan perusahaan.
+                </p>
               </div>
             </div>
           </div>
+          <!-- Contoh layanan tambahan bila diperlukan -->
           <div class="col-md-4">
             <div class="card">
               <div class="card-body">
                 <i class="fas fa-paint-brush"></i>
                 <h5 class="card-title mt-3">UI/UX Design</h5>
-                <p class="card-text">Merancang antarmuka pengguna yang mudah digunakan dan estetik.</p>
+                <p class="card-text">
+                  Merancang antarmuka pengguna yang mudah digunakan dan estetik.
+                </p>
               </div>
             </div>
           </div>
@@ -248,7 +300,9 @@
               <div class="card-body">
                 <i class="fas fa-mobile-alt"></i>
                 <h5 class="card-title mt-3">Mobile Friendly</h5>
-                <p class="card-text">Optimasi tampilan dan fungsionalitas untuk perangkat mobile.</p>
+                <p class="card-text">
+                  Optimasi tampilan dan fungsionalitas untuk perangkat mobile.
+                </p>
               </div>
             </div>
           </div>
@@ -277,7 +331,7 @@
           </div>
           <div class="col-md-4">
             <div class="portfolio-item">
-              <img src="https://via.placeholder.com/400x300" alt="REKONSILIASI STOCK OPNAME FISIK">
+              <img src="https://via.placeholder.com/400x300" alt="Rekonsiliasi Stock Opname Fisik">
               <h5 class="mt-2">Proyek 3</h5>
             </div>
           </div>
@@ -322,8 +376,6 @@
   <!-- -------------- End of Main Content -------------- -->
 
   <!-- Bootstrap JS (CDN) -->
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-  ></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
