@@ -3,19 +3,50 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <title>Portofolio - Agung Samodra</title>
+  
+  <!-- Meta SEO -->
+  <meta name="description" content="Portofolio Agung Samodra - Profesional di bidang Analisa & SPI, keuangan, dan analisis penjualan." />
+  <meta name="keywords" content="Agung Samodra, Analisa, SPI, Laporan Keuangan, Portofolio" />
+  <meta name="author" content="Agung Samodra" />
+
+  <!-- Open Graph & Twitter Card -->
+  <meta property="og:title" content="Portofolio - Agung Samodra" />
+  <meta property="og:description" content="Portofolio Agung Samodra - Profesional di bidang Analisa & SPI, keuangan, dan analisis penjualan." />
+  <meta property="og:image" content="https://github.com/WebAnalisaPenjualan/Bio/blob/main/IMG/agsf.jpeg?raw=true" />
+  <meta property="og:url" content="https://domainanda.com" />
+  <meta name="twitter:card" content="summary_large_image" />
+  
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  
   <!-- Bootstrap CSS (CDN) -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-..."
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
   <style>
+    /* CSS Variables untuk konsistensi warna */
+    :root {
+      --primary-color: #007bff;
+      --secondary-color: #343a40;
+      --light-bg: #f8f9fa;
+      --text-color: #333;
+      --subtext-color: #555;
+    }
+    
     /* -------------- Umum -------------- */
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Roboto', Arial, sans-serif;
       margin: 0;
       padding: 0;
+      color: var(--text-color);
+      background-color: #fff;
     }
     
     /* Main content: margin disesuaikan untuk desktop dan mobile */
@@ -32,7 +63,7 @@
       left: 0;
       width: 250px;
       height: 100vh;
-      background: #343a40;
+      background: var(--secondary-color);
       color: #fff;
       overflow-y: auto;
       transition: all 0.3s ease;
@@ -99,11 +130,11 @@
     .about .title {
       font-weight: 600;
       font-size: 1.5rem;
-      color: #333;
+      color: var(--text-color);
     }
     .about .subtitle {
       font-size: 1rem;
-      color: #555;
+      color: var(--subtext-color);
     }
     .about .description {
       margin-top: 20px;
@@ -114,7 +145,7 @@
     /* -------------- Bagian "Services" -------------- */
     .services .card {
       border: none;
-      background-color: #f8f9fa;
+      background-color: var(--light-bg);
       margin-bottom: 1rem;
       transition: transform 0.2s;
     }
@@ -127,7 +158,7 @@
     .services i {
       font-size: 2rem;
       margin-bottom: 10px;
-      color: #007bff;
+      color: var(--primary-color);
     }
     
     /* -------------- Bagian "Portfolio" -------------- */
@@ -149,7 +180,7 @@
     footer {
       text-align: center;
       padding: 20px;
-      color: #555;
+      color: var(--subtext-color);
       border-top: 1px solid #e9ecef;
       margin-top: 2rem;
     }
@@ -173,17 +204,17 @@
       right: 20px;
       display: none;
       font-size: 2rem;
-      color: #007bff;
+      color: var(--primary-color);
       cursor: pointer;
     }
   </style>
 </head>
 <body>
   <!-- Navbar Mobile (hanya tampil di perangkat kecil) -->
-  <nav class="navbar navbar-dark bg-dark d-md-none">
+  <nav class="navbar navbar-dark bg-dark d-md-none" role="navigation">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Agung Samodra</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav" aria-controls="mobileNav">
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav" aria-controls="mobileNav" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
     </div>
@@ -205,42 +236,43 @@
       </ul>
       <hr />
       <!-- Tautan Sosial Media -->
-<ul class="navbar-nav">
-  <li class="nav-item">
-    <a href="https://www.facebook.com/share/194G2ikkq4/" class="nav-link" target="_blank"><i class="fab fa-facebook-f me-2"></i>Facebook</a>
-  </li>
-  <li class="nav-item">
-    <a href="https://www.instagram.com/agung_samodra/?igsh=NGV2cmltb2cyM3I4#" class="nav-link" target="_blank">
-      <i class="fab fa-instagram me-2"></i>Instagram
-    </a>
-  </li>
-  <li class="nav-item">
-    <a href="https://www.linkedin.com/in/agungsamodra?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="nav-link" target="_blank"><i class="fab fa-linkedin me-2"></i>LinkedIn</a>
-  </li>
-  <li class="nav-item">
-    <a href="#" class="nav-link"><i class="fab fa-github me-2"></i>GitHub</a>
-  </li>
-</ul>
-
-<!-- Tautan Sosial Media di Sidebar Desktop -->
-<ul class="mt-auto">
-  <li><a href="https://www.facebook.com/share/194G2ikkq4/" target="_blank"><i class="fab fa-facebook-f me-2"></i>Facebook</a></li>
-  <li>
-    <a href="https://www.instagram.com/agung_samodra/?igsh=NGV2cmltb2cyM3I4#" target="_blank">
-      <i class="fab fa-instagram me-2"></i>Instagram
-    </a>
-  </li>
-  <li><a href="https://www.linkedin.com/in/agungsamodra?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin me-2"></i>LinkedIn</a></li>
-  <li><a href="#"><i class="fab fa-github me-2"></i>GitHub</a></li>
-</ul>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="https://www.facebook.com/share/194G2ikkq4/" class="nav-link" target="_blank">
+            <i class="fab fa-facebook-f me-2"></i>Facebook
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="https://www.instagram.com/agung_samodra/?igsh=NGV2cmltb2cyM3I4#" class="nav-link" target="_blank">
+            <i class="fab fa-instagram me-2"></i>Instagram
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="https://www.linkedin.com/in/agungsamodra?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="nav-link" target="_blank">
+            <i class="fab fa-linkedin me-2"></i>LinkedIn
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="fab fa-github me-2"></i>GitHub
+          </a>
+        </li>
+      </ul>
+      <!-- Tautan Sosial Media Tambahan (jika diperlukan) -->
+      <ul class="mt-auto">
+        <li><a href="https://www.facebook.com/share/194G2ikkq4/" target="_blank"><i class="fab fa-facebook-f me-2"></i>Facebook</a></li>
+        <li><a href="https://www.instagram.com/agung_samodra/?igsh=NGV2cmltb2cyM3I4#" target="_blank"><i class="fab fa-instagram me-2"></i>Instagram</a></li>
+        <li><a href="https://www.linkedin.com/in/agungsamodra?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin me-2"></i>LinkedIn</a></li>
+        <li><a href="#"><i class="fab fa-github me-2"></i>GitHub</a></li>
+      </ul>
     </div>
   </div>
   
-  <!-- Sidebar Desktop (ditampilkan untuk layar medium ke atas) -->
-  <div class="sidebar d-none d-md-flex flex-column">
+  <!-- Sidebar Desktop (hanya tampil pada layar medium ke atas) -->
+  <div class="sidebar d-none d-md-flex flex-column" role="complementary">
     <!-- Foto Profil -->
     <div class="profile-pic">
-      <img src="https://github.com/WebAnalisaPenjualan/Bio/blob/main/IMG/agsf.jpeg?raw=true" alt="Agung Samodra">
+      <img src="https://github.com/WebAnalisaPenjualan/Bio/blob/main/IMG/agsf.jpeg?raw=true" alt="Foto Profil Agung Samodra" loading="lazy">
     </div>
     <!-- Info Profil -->
     <h3>Agung Samodra</h3>
@@ -256,11 +288,7 @@
     <!-- Tautan Sosial Media -->
     <ul class="mt-auto">
       <li><a href="https://www.facebook.com/share/194G2ikkq4/" target="_blank"><i class="fab fa-facebook-f me-2"></i>Facebook</a></li>
-      <li>
-        <a href="https://www.instagram.com/agung_samodra/?igsh=NGV2cmltb2cyM3I4#" target="_blank">
-          <i class="fab fa-instagram me-2"></i>Instagram
-        </a>
-      </li>
+      <li><a href="https://www.instagram.com/agung_samodra/?igsh=NGV2cmltb2cyM3I4#" target="_blank"><i class="fab fa-instagram me-2"></i>Instagram</a></li>
       <li><a href="https://www.linkedin.com/in/agungsamodra?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin me-2"></i>LinkedIn</a></li>
       <li><a href="#"><i class="fab fa-github me-2"></i>GitHub</a></li>
     </ul>
@@ -273,9 +301,9 @@
       <div class="container">
         <div class="row align-items-center" style="min-height: 80vh;">
           <div class="col-md-12 text-center">
-            <h1>Halo, Saya <span style="color: #007bff;">Agung Samodra</span></h1>
+            <h1>Halo, Saya <span style="color: var(--primary-color);">Agung Samodra</span></h1>
             <p class="lead">
-              Seorang <b>pembuat artikel analisa</b> yang senang membantu kalian seputar analisa penjualan, laporan keuangan, dan SPI.
+              Seorang <strong>pembuat artikel analisa</strong> yang senang membantu kalian seputar analisa penjualan, laporan keuangan, dan SPI.
             </p>
             <a href="#contact" class="btn btn-primary btn-lg mt-3">
               Hubungi Saya untuk Free Konsultasi
@@ -298,7 +326,7 @@ Saya bekerja di perusahaan dengan tanggung jawab untuk memantau dan menganalisis
             </p>
           </div>
           <div class="col-md-6">
-            <img src="https://github.com/WebAnalisaPenjualan/Bio/blob/main/IMG/agsf.jpeg?raw=true" alt="Tentang Saya" class="img-fluid rounded" />
+            <img src="https://github.com/WebAnalisaPenjualan/Bio/blob/main/IMG/agsf.jpeg?raw=true" alt="Tentang Saya" class="img-fluid rounded" loading="lazy">
           </div>
         </div>
       </div>
@@ -355,19 +383,19 @@ Saya bekerja di perusahaan dengan tanggung jawab untuk memantau dan menganalisis
         <div class="row">
           <div class="col-md-4">
             <div class="portfolio-item">
-              <img src="https://via.placeholder.com/400x300" alt="Dashboard Analisa Penjualan">
+              <img src="https://via.placeholder.com/400x300" alt="Dashboard Analisa Penjualan" loading="lazy">
               <h5 class="mt-2">Proyek 1</h5>
             </div>
           </div>
           <div class="col-md-4">
             <div class="portfolio-item">
-              <img src="https://via.placeholder.com/400x300" alt="KPI">
+              <img src="https://via.placeholder.com/400x300" alt="KPI" loading="lazy">
               <h5 class="mt-2">Proyek 2</h5>
             </div>
           </div>
           <div class="col-md-4">
             <div class="portfolio-item">
-              <img src="https://via.placeholder.com/400x300" alt="Rekonsiliasi Stock Opname Fisik">
+              <img src="https://via.placeholder.com/400x300" alt="Rekonsiliasi Stock Opname Fisik" loading="lazy">
               <h5 class="mt-2">Proyek 3</h5>
             </div>
           </div>
@@ -381,18 +409,27 @@ Saya bekerja di perusahaan dengan tanggung jawab untuk memantau dan menganalisis
         <h2 class="text-center">Hubungi Saya</h2>
         <div class="row justify-content-center mt-5">
           <div class="col-md-6">
-            <form>
+            <form novalidate>
               <div class="mb-3">
                 <label for="name" class="form-label">Nama</label>
                 <input type="text" class="form-control" id="name" placeholder="Masukkan nama Anda" required>
+                <div class="invalid-feedback">
+                  Mohon masukkan nama Anda.
+                </div>
               </div>
               <div class="mb-3">
                 <label for="email" class="form-label">Alamat Email</label>
                 <input type="email" class="form-control" id="email" placeholder="contoh@email.com" required>
+                <div class="invalid-feedback">
+                  Mohon masukkan email yang valid.
+                </div>
               </div>
               <div class="mb-3">
                 <label for="message" class="form-label">Pesan</label>
                 <textarea class="form-control" id="message" rows="4" placeholder="Tuliskan pesan Anda di sini" required></textarea>
+                <div class="invalid-feedback">
+                  Mohon tuliskan pesan Anda.
+                </div>
               </div>
               <button type="submit" class="btn btn-primary">Kirim</button>
             </form>
@@ -408,7 +445,7 @@ Saya bekerja di perusahaan dengan tanggung jawab untuk memantau dan menganalisis
   </div>
   
   <!-- Back to Top Button -->
-  <div class="back-to-top" id="backToTop">
+  <div class="back-to-top" id="backToTop" aria-label="Back to Top">
     <i class="fas fa-arrow-up"></i>
   </div>
   
@@ -423,6 +460,21 @@ Saya bekerja di perusahaan dengan tanggung jawab untuk memantau dan menganalisis
     backToTopButton.addEventListener('click', () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
+    
+    // Form validation dengan Bootstrap
+    (function () {
+      'use strict'
+      const forms = document.querySelectorAll('form')
+      Array.from(forms).forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+          form.classList.add('was-validated')
+        }, false)
+      })
+    })()
   </script>
 </body>
 </html>
